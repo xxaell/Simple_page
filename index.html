@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simple Page</title>
+
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+	<link rel="shortcut icon" href="./favicon/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+	<meta name="apple-mobile-web-app-title" content="Project" />
+	<link rel="manifest" href="./favicon/site.webmanifest" />
+
+	<!-- css -->
+	<link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+	<!-- HEADER -->
+	<header class="header" aria-label="header">
+		<a 
+			class="logo__link" 
+			href="#" 
+			aria-label="logo link">
+			<svg class="logo__img">
+				<use href="./assets/icons/sprite.svg#logo"></use>
+			</svg>
+		</a>
+
+		<nav class="nav" aria-label="navigation">
+			<ul class="nav__list" aria-label="navigation list">
+				<li class="nav__item" aria-label="navigation item">
+					<a class="nav__link" href="#" aria-label="navigate to Products">Продукция</a>
+				</li>
+				<li class="nav__item" aria-label="navigation item">
+					<a class="nav__link" href="#" aria-label="navigate to Materials">Материалы</a>
+				</li>
+				<li class="nav__item" aria-label="navigation item">
+					<a class="nav__link" href="#" aria-label="navigate to About">О нас</a>
+				</li>
+				<li class="nav__item" aria-label="navigation item">
+					<a class="nav__link" href="#" aria-label="navigate to Contacts">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="actions" aria-label="action buttons">
+			<input type="checkbox" id="burger-buttonID">
+			<label tabindex="0" class="actions-burger__button" for="burger-buttonID" aria-label="menu button">
+				<svg class="actions-burger__icon">
+					<use href="./assets/icons/sprite.svg#burger"></use>
+				</svg>
+			</label>
+
+			<a class="actions-search__link" href="#" aria-label="search button">
+				<svg class="actions-search__icon">
+					<use href="./assets/icons/sprite.svg#search"></use>
+				</svg>
+			</a>
+
+			<a class="actions-login__link" href="#" aria-label="login button">
+				<svg class="actions-login__icon">
+					<use href="./assets/icons/sprite.svg#login"></use>
+				</svg>
+			</a>
+		</div>
+	</header>
+
+
+	<!-- MAIN -->
+	<main class="main" aria-label="main">
+		<!-- HERO SECTION -->
+		<section class="hero" aria-label="hero section">
+			<div class="container">
+				<h1 class="hero__title" aria-label="paper title">Простые вещи. Из бумаги</h1>
+				<p class="hero__subtitle" aria-label="paper description">
+					Бума́га (предположительно от итал. bombagia, первоисточником же считается иранский) — волокнистый материал с
+					минеральными добавками.
+				</p>
+				<button class="action__button" type="button" aria-label="catalog button">Каталог</button>
+
+				<picture class="hero__background" aria-label="section banner">
+					<source srcset="
+						./assets/imgs/hero-section/banner-bg-1x.avif 1x, 
+						./assets/imgs/hero-section/banner-bg-2x.avif 2x, 
+						./assets/imgs/hero-section/banner-bg-3x.avif 3x" type="image/avif">
+					<source srcset="
+						./assets/imgs/hero-section/banner-bg-1x.webp 1x, 
+						./assets/imgs/hero-section/banner-bg-2x.webp 2x, 
+						./assets/imgs/hero-section/banner-bg-3x.webp 3x" type="image/webp">
+					<img src="./assets/imgs/hero-section/banner-bg-1x.png" alt="paper scroll" width="540" height="1336">
+				</picture>
+			</div>
+		</section>
+
+		<!-- INFORMATION SECTION -->
+		<section class="information" aria-label="information section">
+			<div class="container">
+				<div class="information__results" aria-label="results of study">
+					<div class="result-v1" aria-label="result v.1">
+						<img class="result-v1__img" src="./assets/imgs/information-section/information_card_v1.svg" alt="paper v.1"
+							width="160" height="118">
+						<p class="result-v1__subtitle" aria-label="result subtitle">
+							<b>V.1</b> <br>
+							Результат вашего обучения
+						</p>
+					</div>
+					<div class="result-v2" aria-label="result v.1">
+						<img class="result-v2__img" src="./assets/imgs/information-section/information_card_v2.svg" alt="paper v.2"
+							width="160" height="118">
+						<p class="result-v2__subtitle" aria-label="result subtitle">
+							<b>V.2</b> <br>
+							Результат вашего обучения
+						</p>
+					</div>
+					<div class="result-v3" aria-label="result v.1">
+						<img class="result-v3__img" src="./assets/imgs/information-section/information_card_v3.svg" alt="paper v.3"
+							width="160" height="118">
+						<p class="result-v3__subtitle" aria-label="result subtitle">
+							<b>V.3</b> <br>
+							Результат вашего обучения
+						</p>
+					</div>
+				</div>
+
+				<div class="subsection" aria-label="information subsection">
+					<picture class="information__background" aria-label="subsection banner">
+						<source srcset="
+							./assets/imgs/information-section/information-bg-1x.avif 1x, 
+							./assets/imgs/information-section/information-bg-2x.avif 2x, 
+							./assets/imgs/information-section/information-bg-3x.avif 3x" type="image/avif">
+						<source srcset="
+							./assets/imgs/information-section/information-bg-1x.webp 1x, 
+							./assets/imgs/information-section/information-bg-2x.webp 2x, 
+							./assets/imgs/information-section/information-bg-3x.webp 3x" type="image/webp">
+						<img src="./assets/imgs/information-section/information-bg-1x.png" alt="unfolded paper" width="730"
+							height="564">
+					</picture>
+
+					<div class="information__block" aria-label="information block">
+						<h2 class="information__title" aria-label="information title">Максимальная белизна</h2>
+						<p class="information__subtitle" aria-label="information subtitle">
+							Для повышения белизны, гладкости и мягкости в состав бумажной массы вводят белые минеральные вещества:
+							мел,
+							тальк, каолин и др. Эта операция называется наполнением.
+						</p>
+						<p class="information__subtitle" aria-label="information subtitle 2">
+							Отлив бумажного листа осуществляют на бумагоделательной машине, важнейшей частью которой является
+							непрерывно
+							движущаяся (как транспортер) металлическая или капроновая сетка.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- PRODUCTS SECTION -->
+		<section class="products" aria-label="products section">
+			<div class="container">
+				<div class="products__wrapper">
+					<div class="products__card" aria-label="product card">
+						<img class="card__img" src="./assets/imgs/products-section/card-image1.png" alt="card image">
+						<h3 class="card__title" aria-label="card title">Упаковка</h3>
+						<small class="card__quantity" aria-label="quantity">Тираж: от 50 штук</small>
+						<p class="card__description" aria-label="card description">
+							Сделано из крафт-бумаги или плотного картона. Упаковки имеют различные формы и расцветки, изготовим форму
+							под заказ.
+						</p>
+						<a href="#" class="card__more" aria-label="link to more">Подробнее →</a>
+					</div>
+
+					<div class="products__card" aria-label="product card">
+						<img class="card__img" src="./assets/imgs/products-section/card-image2.png" alt="card image">
+						<h3 class="card__title" aria-label="card title">Пакеты</h3>
+						<small class="card__quantity" aria-label="quantity">Тираж: от 200 штук</small>
+						<p class="card__description" aria-label="card description">
+							С прямоугольным дном. От 10 см до 60 см по высоте. Материалы: картон, крафт-бумага. Различные
+							расцветки
+							и дизайн..
+						</p>
+						<a href="#" class="card__more" aria-label="link to more">Подробнее →</a>
+					</div>
+
+					<div class="products__card" aria-label="product card">
+						<img class="card__img" src="./assets/imgs/products-section/card-image4.png" alt="card image">
+						<h3 class="card__title" aria-label="card title">Кейсы</h3>
+						<small class="card__quantity" aria-label="quantity">Тираж: от 30 штук</small>
+						<p class="card__description" aria-label="card description">
+							Подойдет для документов и других бумаг. Различные расцветки, размеры и плотность. Материал: прессованная
+							бумага.
+						</p>
+						<a href="#" class="card__more" aria-label="link to more">Подробнее →</a>
+					</div>
+
+					<div class="products__card" aria-label="product card">
+						<img class="card__img" src="./assets/imgs/products-section/card-image3.png" alt="card image">
+						<h3 class="card__title" aria-label="card title">Другие изделия</h3>
+						<small class="card__quantity" aria-label="quantity">Тираж: от 100 штук</small>
+						<p class="card__description" aria-label="card description">
+							Нестандартные упаковки, кейсы и другие изделия различных размеров и конфигураций. Изготовим в кратчайшие
+							сроки.
+						</p>
+						<a href="#" class="card__more" aria-label="link to more">Подробнее →</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- PARTNERS SECTION -->
+		<section class="partners" aria-label="partners section">
+			<div class="container">
+				<div class="partners__wrapper">
+					<div class="partners__block" aria-label="partner 1">
+						<svg class="partners__img" aria-label="partner logo">
+							<use href="./assets/icons/sprite.svg#firm1"></use>
+						</svg>
+					</div>
+					<div class="partners__block" aria-label="partner 2">
+						<svg class="partners__img" aria-label="partner logo">
+							<use href="./assets/icons/sprite.svg#firm2"></use>
+						</svg>
+					</div>
+					<div class="partners__block" aria-label="partner 3">
+						<svg class="partners__img" aria-label="partner logo">
+							<use href="./assets/icons/sprite.svg#firm3"></use>
+						</svg>
+					</div>
+					<div class="partners__block" aria-label="partner 4">
+						<svg class="partners__img" aria-label="partner logo">
+							<use href="./assets/icons/sprite.svg#firm4"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- SKETCHBOOK SECTION -->
+		<section class="sketchbook" aria-label="sketchbook section">
+			<div class="container">
+				<div class="sketchbook__inner">
+					<div class="sketchbook__block" aria-label="left text block">
+						<h2 class="sketchbook__title" aria-label="section title">Simple скетчбук</h2>
+						<p class="sketchbook__desription" aria-label="section description">
+							80 листов, твердая обложка, бумага  Fabriano 200 г/м². Подойдет и для графики и для акварели. Для самых смелых творческих замыслов!
+						</p>
+						<button class="buy__button" type="button" aria-label="buy button">Купить</button>
+					</div>
+	
+					<picture class="sketchbook__picture" aria-label="section background">
+						<source srcset="
+							./assets/imgs/sketchbook-section/sketchboook-bg.avif 1x, 
+							./assets/imgs/sketchbook-section/sketchboook-bg@2x.avif 2x, 
+							./assets/imgs/sketchbook-section/sketchboook-bg@3x.avif 3x" type="image/avif">
+						<source srcset="
+							./assets/imgs/sketchbook-section/sketchboook-bg.webp 1x, 
+							./assets/imgs/sketchbook-section/sketchboook-bg@2x.webp 2x, 
+							./assets/imgs/sketchbook-section/sketchboook-bg@3x.webp 3x" type="image/webp">
+						<img class="sketchbook__background" src="./assets/imgs/sketchbook-section/sketchboook-bg.png" alt="sketchbook" width="730" height="555">
+					</picture>
+				</div>
+			</div>
+		</section>
+	</main>
+
+
+	<!-- FOOTER -->
+	<footer class="footer" aria-label="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<a class="footer__logo-link" href="#" aria-label="logo link">
+					<svg class="footer__logo-img" aria-label="logo image">
+						<use href="./assets/icons/sprite.svg#logo-footer"></use>
+					</svg>
+				</a>
+
+				<hr class="footer__divider" aria-label="divider">
+
+				<div class="socials" aria-label="socials icons">
+					<a 
+						class="facebook-link" 
+						href="https://facebook.com" 
+						target="_blank"
+						aria-label="facebook link">
+						<svg class="facebook-icon icon-hover" aria-label="social icon">
+							<use href="./assets/icons/sprite.svg#facebook"></use>
+						</svg>
+					</a>
+
+					<a 
+						class="twitter-link" 
+						href="https://x.com" 
+						target="_blank"
+						aria-label="twitter link">
+						<svg class="twitter-icon icon-hover" aria-label="social icon">
+							<use href="./assets/icons/sprite.svg#twitter"></use>
+						</svg>
+					</a>
+
+					<a 
+						class="instagram-link" 
+						href="https://instagram.com" 
+						target="_blank"
+						aria-label="instagram link">
+						<svg class="instagram-icon icon-hover" aria-label="social icon">
+							<use href="./assets/icons/sprite.svg#instagram"></use>
+						</svg>
+					</a>
+
+					<a 
+						class="youtube-link" 
+						href="https://youtube.com" 
+						target="_blank"
+						aria-label="youtube link">
+						<svg class="youtube-icon icon-hover" aria-label="social icon">
+							<use href="./assets/icons/sprite.svg#youtube"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="simple__rights">SIMPLE <span>&#174</span> 2021</div>
+
+</body>
+
+</html>

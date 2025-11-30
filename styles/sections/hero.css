@@ -1,0 +1,230 @@
+.hero {
+	margin: 0;
+	min-height: calc(100dvh - 5rem);
+	padding-top: 8.125rem;
+	background-color: var(--bg-color);
+	overflow: hidden;
+}
+
+/* There are may be problems in other sections */
+.container {
+	position: relative;
+}
+
+.hero__title {
+	width: 27.75rem;
+	height: 7.5rem;
+	margin: 0;
+	line-height: 100%;
+	font-size: 3.75rem;
+	font-weight: 400;
+	color: var(--font-color);
+}
+
+.hero__subtitle {
+	width: 27.75rem;
+	height: 6.875rem;
+	margin: 1.875rem 0;
+	line-height: 150%;
+	font-size: 1.125rem;
+	font-weight: 400;
+	color: var(--font-color2);
+}
+
+/* Button component */
+.action__button {
+	padding: 0;
+	width: 15.938rem;
+	height: 4.375rem;
+	background-color: transparent;
+	border: 1px solid var(--button-border-color);
+	font-size: 1.25rem;
+	color: var(--button-font-color);
+	cursor: pointer;
+	transition: all 0.15s;
+}
+
+.action__button:hover {
+	background-color: var(--button-hover-color);
+	color: white;
+}
+
+.action__button:active {
+	background-color: var(--button-active-color);
+	color: #7875FE;
+}
+/* ---------------- */
+
+.hero__background {
+	position: absolute;
+	top: -3.75rem;
+	right: 2.5rem;
+	width: 33.75rem;
+	height: 83.5rem;
+}
+
+
+
+
+
+/* 1025px */
+@media (max-width: 64.063rem) {
+	.hero__background {
+		top: -0.313rem;
+		width: 25rem;
+		height: 61.875rem;
+	}
+}
+
+
+
+
+
+/* 920px */
+@media (max-width: 57.5rem) {
+	.hero {
+		padding-top: 4.063rem;
+		min-height: calc(100svh - 6.563rem);
+	}
+
+	.hero__title {
+		width: 24.375rem;
+		height: 6.25rem;
+		margin: 0;
+		line-height: 100%;
+		font-size: 3.125rem;
+	}
+
+	.hero__subtitle {
+		width: 24.375rem;
+		height: 6.25rem;
+	}
+
+	.hero__background {
+		width: 43.478vw;
+		height: 107.609vw;
+	}
+}
+
+
+
+
+
+/* 792px */
+@media (max-width: 48.75rem) {
+	.hero__background {
+		width: 34.615vw;
+		height: 85.641vw;
+	}
+}
+
+
+
+
+
+/* 678px */
+@media (max-width: 42.375rem) {
+	.hero {
+		min-height: calc(76svh - 6.563rem);
+		padding: 3.75rem 0;
+	}
+	.hero__title {
+		width: 17.875rem;
+		height: 4.75rem;
+		font-size: 2.375rem;
+	}
+	.hero__subtitle {
+		width: 17.875rem;
+		height: 7.5rem;
+		font-size: 1rem;
+		margin: 1.25rem 0;
+	}
+	.action__button {
+		width: 12.25rem;
+		height: 3.75rem;
+	}
+	.hero__background {
+		width: 12.188rem;
+		height: 24.75rem;
+	}
+}
+
+
+
+
+
+/* 576px */
+@media (max-width: 36rem) {
+	.hero {
+			padding: 3.75rem 0 0;
+			min-height: calc(77svh - 6.563rem);
+		}
+
+		.hero__title {
+			width: 17.875rem;
+			height: 4.75rem;
+			font-size: 2.375rem;
+		}
+
+		.hero__subtitle {
+			margin: 1.25rem 0;
+			width: 17.938rem;
+			height: 7.5rem;
+			font-size: 1rem;
+		}
+
+		.action__button {
+			width: 12.25rem;
+			height: 3.75rem;
+		}
+	}
+
+
+
+
+
+	/* 555px */
+	@media (max-width: 34.688rem) {
+		.container {
+			position: static;
+		}
+		.hero {
+			position: relative;
+			height: calc(100svh - 6.563rem);
+		}
+		.hero__background {
+			top: 25rem;
+			right: calc(50% - 6.25rem);
+		}
+	}
+
+
+
+
+
+	/* 320px */
+	@media (max-width: 20rem) {
+		.hero {
+			padding: 3.125rem 0 0;
+			min-height: 20.5rem;
+		}
+
+		.hero__title {
+			width: 13.813rem;
+			height: 3.75rem;
+			font-size: 1.875rem;
+		}
+
+		.hero__subtitle {
+			margin: 0.938rem 0 1.25rem;
+			width: 18.063rem;
+			line-height: 150%;
+			height: 5.25rem;
+			font-size: 0.875rem;
+		}
+
+		.action__button {
+			width: 9rem;
+			height: 3.125rem;
+		}
+	}

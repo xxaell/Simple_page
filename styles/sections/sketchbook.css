@@ -1,0 +1,206 @@
+.sketchbook {
+	height: 31.25rem;
+	overflow: hidden;
+}
+
+.sketchbook__inner {
+	padding-top: 5.625rem;
+	display: flex;
+	gap: 1.875rem;
+}
+
+.sketchbook__block {
+	margin-top: 1.5rem;
+	width: 21.875rem;
+	height: 17rem;
+}
+
+.sketchbook__title {
+	margin: 0;
+	font-size: 2.5rem;
+	font-weight: 400;
+	color: var(--font-color3);
+}
+
+.sketchbook__desription {
+	margin: 0.5rem 0 1.5rem;
+	height: 7.75rem;
+	line-height: 170%;
+	font-size: 1.125rem;
+	color: var(--font-color2);
+}
+
+/* Button component */
+.buy__button {
+	padding: 0;
+	width: 15.938rem;
+	height: 4.375rem;
+	background-color: transparent;
+	border: 1px solid var(--button-border-color);
+	font-size: 1.25rem;
+	color: var(--button-font-color);
+	cursor: pointer;
+	transition: all 0.15s;
+}
+
+.buy__button:hover {
+	background-color: var(--button-hover-color);
+	color: white;
+}
+
+.buy__button:active {
+	background-color: var(--button-active-color);
+	color: #7875FE;
+}
+/* ---------------- */
+
+.sketchbook__background {
+	max-width: 45.625rem;
+	height: 34.688rem;
+}
+
+
+
+
+
+/* 1150px */
+@media (max-width: 71.875rem) {
+
+	.sketchbook__block {
+		width: 26.957vw;
+	}
+	.sketchbook__title {
+		font-size: 3.478vw;
+	}
+	.sketchbook__desription {
+		/* margin: 0.696vw 0 2.087vw; */
+		width: 30.435vw;
+		height: 10.783vw;
+		font-size: 1.565vw;
+	}
+	.buy__button {
+		width: 22.174vw;
+		height: 6.087vw;
+	}
+
+	.sketchbook__background {
+		width: 63.478vw;
+		height: 48.261vw;
+	}
+}
+
+
+
+
+
+/* 768px */
+@media (max-width: 48rem) {
+	.sketchbook {
+		position: relative;
+		height: 24.625rem;
+	}
+
+	.sketchbook__inner {
+		padding: 3.75rem 0;
+	}
+
+	.sketchbook__block {
+		margin: 0;
+		width: 20.625rem;
+		height: 17.125rem;
+	}
+
+	.sketchbook__title {
+		height: 1.875rem;
+		font-size: 1.875rem;
+	}
+
+	.sketchbook__desription {
+		margin: 1.25rem 0 1.875rem;
+		width: 20.625rem;
+		height: 7.75rem;
+		font-size: 1.125rem;
+	}
+	
+	.buy__button {
+		width: 15.938rem;
+		height: 4.375rem;
+	}
+
+	.sketchbook__background {
+		position: absolute;
+		top: 3.75rem;
+		right: -5rem;
+		width: 28.063rem;
+		height: 21.313rem;
+	}
+}
+
+
+
+
+
+/* 768px */
+@media (max-width: 48rem) {
+	.sketchbook__inner {
+		justify-content: center;
+		gap: 0;
+		text-align: center;
+	}
+
+	.sketchbook__background {
+		display: none;
+	}
+
+	.buy__button {
+		margin: 0 auto;
+	}
+}
+
+
+
+
+
+/* 576px */
+@media (max-width: 36rem) {
+	.sketchbook {
+		height: auto;
+		padding: 3.75rem 0 0;
+		overflow: visible;
+		position: static;
+	}
+	.sketchbook__inner {
+		padding: 0;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 0;
+	}
+
+	.sketchbook__block {
+		width: 18.063rem;
+		order: 1;
+	}
+
+	.sketchbook__title {
+		font-size: 1.5rem;
+	}
+	.sketchbook__desription {
+		width: 100%;
+		height: 6.75rem;
+		font-size: 1rem;
+	}
+	.buy__button {
+		width: 9rem;
+		height: 3.125rem;
+	}
+
+	.sketchbook__picture,
+	.sketchbook__background {
+		max-width: 77.951vw;
+		height: auto;
+	}
+	.sketchbook__background {
+		display: block;
+		position: static;
+	}
+}

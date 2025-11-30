@@ -1,0 +1,15 @@
+@import url('./basic/fonts.css');
+@import url('./basic/normalize.css');
+@import url('./basic/variables.css');
+@import url('./basic/basic.css');
+
+@import url('./header.css');
+
+/* MAIN */
+@import url('./sections/hero.css');
+@import url('./sections/information.css');
+@import url('./sections/products.css');
+@import url('./sections/partners.css');
+@import url('./sections/sketchbook.css');
+
+@import url('./footer.css');

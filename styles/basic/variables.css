@@ -1,0 +1,30 @@
+:root {
+	--bg-color: #FFFFFF;
+	--font-color: #4C5866;
+	--divider-color: #DDDDDD;
+	
+	/* hero */
+	--font-color2: #85859B;
+	
+	/* button */
+	--button-border-color: #7875FE;
+	--button-font-color: #7875FE;
+	--button-font-color2: #4946B4;
+	--button-hover-color: #7875FE;
+	--button-active-color: #DAD9FB;
+	--button-border-radius: 10px;
+	
+	
+	/* information */
+	--bg-color2: #EBEBEB;
+	--font-color3: #666666;
+	--border-color: #C0C0C0;
+
+	/* products */
+	--font-color4: #B5B5BD;
+	--button-color2: #4946B4;
+	--button-bg-color: #DAD9FB;
+
+	/* footer */
+	--footer-bg: #4C5866;
+}
