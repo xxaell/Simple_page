@@ -4,7 +4,7 @@
 
 Сделал его по макету, но не ограничился «повторением картинки» — старался подходить как фронтендер со своим чувством вкуса, который думает о качестве, структуре и будущем проекта.
 
-Ссылка на макет <a href="https://www.figma.com/design/sJwabNIQ83JF9XIGfYCOl4/Simple?node-id=0-1&t=8pGJ30vy0lxBTjCU-1" target="_blank">Figma</a>
+Ссылка на макет <a href="https://www.figma.com/design/sJwabNIQ83JF9XIGfYCOl4/Simple?node-id=0-1&t=8pGJ30vy0lxBTjCU-1" target="_blank">Figma</a> (Ctrl + Click чтобы открыть в новой вкладке)
 
 ---
 
@@ -72,4 +72,5 @@ https://xxaell.github.io/Simple_page/
 ---
 
 Если вам хочется увидеть качественную, аккуратную и продуманную верстку — этот проект хорошо показывает мой уровень на этапе изучения HTML/CSS и отношение к работе.
+
 
